@@ -3,8 +3,8 @@
 
 set -eE
 confhome=https://raw.githubusercontent.com/dsx8895/reinstall/main
-confhome_cn=https://jihulab.com/dsx8895/reinstall/-/raw/main
-# confhome_cn=https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/main
+# confhome_cn=https://jihulab.com/dsx8895/reinstall/-/raw/main
+confhome_cn=https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/main
 
 # https://www.gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
 export LC_ALL=C
