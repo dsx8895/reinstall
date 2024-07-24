@@ -22,9 +22,7 @@ runcmd:
   - test $(wc -l </etc/ssh/sshd_config) -le 1 && cat /etc/ssh/sshd_config >>/etc/ssh/sshd_config.d/50-cloud-init.conf && rm -f /etc/ssh/sshd_config
   - echo "PermitRootLogin yes" >/etc/ssh/sshd_config.d/01-permitrootlogin.conf || sed -Ei 's/^#?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
   # 自定义SSH端口为3322
-  - sed -Ei 's/^#?port.*/port 3322/' /etc/ssh/sshd_config
-  # 开启密码登录
-  - sed -Ei 's/^#?PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config
+  - printf "\nPermitRootLogin yes\nPasswordAuthentication yes\nport 3322" >> /etc/ssh/sshd_config
   #- echo -e "\nPermitRootLogin yes\nport 3322\nPasswordAuthentication yes" > /etc/ssh/sshd_config
   # 已创建的 ssh 连接会沿用旧的配置（未开启密码登录），这时即使输入正确的密码，也会提示 Access Denied
   # systemctl restart sshd 只会重启监听进程，不会关闭已创建的连接（子进程）
@@ -32,4 +30,4 @@ runcmd:
   - systemctl restart sshd || systemctl restart ssh
   - touch /etc/cloud/cloud-init.disabled
   # ubuntu 镜像运行 echo -e '\nDone' ，-e 会被显示出来
-  - printf '\n%s\n' 'reinstall done O.o o.O' >/dev/tty0 || true
+  - printf '\n%s\n' 'reinstall done O.o o.O .' >/dev/tty0 || true
