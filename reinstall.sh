@@ -2,9 +2,9 @@
 # shellcheck disable=SC2086
 
 set -eE
-confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
-confhome_cn=https://jihulab.com/bin456789/reinstall/-/raw/main
-# confhome_cn=https://mirror.ghproxy.com/https://raw.githubusercontent.com/bin456789/reinstall/main
+confhome=https://raw.githubusercontent.com/dsx8895/reinstall/main
+confhome_cn=https://jihulab.com/dsx8895/reinstall/-/raw/main
+# confhome_cn=https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/main
 
 # https://www.gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
 export LC_ALL=C
@@ -52,7 +52,7 @@ Usage: $reinstall____ centos      9
                       windows     --image-name='windows xxx yyy' --iso='http://xxx.iso'
                       netboot.xyz
 
-Manual: https://github.com/bin456789/reinstall
+Manual: https://github.com/dsx8895/reinstall
 
 EOF
     exit 1
