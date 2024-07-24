@@ -2,10 +2,10 @@
 
 # reinstall
 
-[![Codacy](https://img.shields.io/codacy/grade/dc679a17751448628fe6d8ac35e26eed?logo=Codacy&label=Codacy)](https://app.codacy.com/gh/bin456789/reinstall/dashboard)
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/bin456789/reinstall?logo=CodeFactor&logoColor=white&label=CodeFactor)](https://www.codefactor.io/repository/github/bin456789/reinstall)
-[![Lines of Code](https://aschey.tech/tokei/github/bin456789/reinstall?category=code&label=Lines%20of%20Code)](https://github.com/aschey/vercel-tokei)
-<!-- [![Lines of Code](https://tokei.rs/b1/github/bin456789/reinstall?category=code&style=flat&label=Lines%20of%20Code)](https://github.com/XAMPPRocky/tokei_rs) -->
+[![Codacy](https://img.shields.io/codacy/grade/dc679a17751448628fe6d8ac35e26eed?logo=Codacy&label=Codacy)](https://app.codacy.com/gh/dsx8895/reinstall/dashboard)
+[![CodeFactor](https://img.shields.io/codefactor/grade/github/dsx8895/reinstall?logo=CodeFactor&logoColor=white&label=CodeFactor)](https://www.codefactor.io/repository/github/dsx8895/reinstall)
+[![Lines of Code](https://aschey.tech/tokei/github/dsx8895/reinstall?category=code&label=Lines%20of%20Code)](https://github.com/aschey/vercel-tokei)
+<!-- [![Lines of Code](https://tokei.rs/b1/github/dsx8895/reinstall?category=code&style=flat&label=Lines%20of%20Code)](https://github.com/XAMPPRocky/tokei_rs) -->
 
 一键重装脚本 [English](README.en.md)
 
@@ -26,7 +26,7 @@
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------- | ------------ |
 | <img width="16" height="16" src="https://www.alpinelinux.org/alpine-logo.ico" /> Alpine                                                                                                                                                                    | 3.17, 3.18, 3.19, 3.20                | 256 MB    | 1 GB         |
 | <img width="16" height="16" src="https://www.debian.org/favicon.ico" /> Debian                                                                                                                                                                             | 9, 10, 11, 12                         | 256 MB    | 1 ~ 1.5 GB ^ |
-| <img width="16" height="16" src="https://github.com/bin456789/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" /> Kali                                                                                                                       | 滚动                                  | 256 MB    | 1 ~ 1.5 GB ^ |
+| <img width="16" height="16" src="https://github.com/dsx8895/reinstall/assets/7548515/f74b3d5b-085f-4df3-bcc9-8a9bd80bb16d" /> Kali                                                                                                                       | 滚动                                  | 256 MB    | 1 ~ 1.5 GB ^ |
 | <img width="16" height="16" src="https://netplan.readthedocs.io/en/latest/_static/favicon.png" /> Ubuntu                                                                                                                                                   | 16.04, 18.04, 20.04, 22.04, 24.04     | 512 MB \* | 2 GB         |
 | <img width="16" height="16" src="https://www.centos.org/assets/img/favicon.png" /> CentOS                                                                                                                                                                  | 9                                     | 512 MB \* | 5 GB         |
 | <img width="16" height="16" src="https://img.alicdn.com/imgextra/i1/O1CN01oJnJZg1yK4RzI4Rx2_!!6000000006559-2-tps-118-118.png" /> Anolis                                                                                                                   | 7, 8                                  | 512 MB \* | 5 GB         |
@@ -67,13 +67,13 @@
 国外服务器：
 
 ```bash
-curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh
+curl -O https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.sh
 ```
 
 国内服务器：
 
 ```bash
-curl -O https://jihulab.com/bin456789/reinstall/-/raw/main/reinstall.sh
+curl -O https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/-/raw/main/reinstall.sh
 ```
 
 ## 下载（当前系统是 <img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows）
@@ -100,22 +100,22 @@ curl -O https://jihulab.com/bin456789/reinstall/-/raw/main/reinstall.sh
 
 3. 手动下载，通过 `远程桌面` 复制这两个文件
 
-   <https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat>
+   <https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.bat>
 
-   <https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh>
+   <https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.sh>
 
 </details>
 
 国外服务器：
 
 ```batch
-certutil -urlcache -f -split https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.bat
+certutil -urlcache -f -split https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.bat
 ```
 
 国内服务器：
 
 ```batch
-certutil -urlcache -f -split https://jihulab.com/bin456789/reinstall/-/raw/main/reinstall.bat
+certutil -urlcache -f -split https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/-/raw/main/reinstall.bat
 ```
 
 ## 使用
@@ -242,7 +242,7 @@ bash reinstall.sh windows \
 
 </details>
 
-![Installing Windows](https://github.com/bin456789/reinstall/assets/7548515/07c1aea2-1ce3-4967-904f-aaf9d6eec3f7)
+![Installing Windows](https://github.com/dsx8895/reinstall/assets/7548515/07c1aea2-1ce3-4967-904f-aaf9d6eec3f7)
 
 #### 参数说明
 
@@ -257,7 +257,7 @@ Windows Server 2022 SERVERDATACENTER
 
 使用 `Dism++` 文件菜单 > 打开映像文件，选择要安装的 iso，可以得到映像名称
 
-![image-name](https://github.com/bin456789/reinstall/assets/7548515/5aae0a9b-61e2-4f66-bb98-d470a6beaac2)
+![image-name](https://github.com/dsx8895/reinstall/assets/7548515/5aae0a9b-61e2-4f66-bb98-d470a6beaac2)
 
 #### 支持的系统
 
@@ -302,5 +302,5 @@ Windows Server 2022 SERVERDATACENTER
 
 感谢以下商家提供白嫖机器
 
-[![Oracle Cloud](https://github.com/bin456789/reinstall/assets/7548515/8b430ed4-8344-4f96-b4da-c2bda031cc90)](https://www.oracle.com/cloud/)
-[![DartNode](https://github.com/bin456789/reinstall/assets/7548515/435d6740-bcdd-4f3a-a196-2f60ae397f17)](https://dartnode.com/)
+[![Oracle Cloud](https://github.com/dsx8895/reinstall/assets/7548515/8b430ed4-8344-4f96-b4da-c2bda031cc90)](https://www.oracle.com/cloud/)
+[![DartNode](https://github.com/dsx8895/reinstall/assets/7548515/435d6740-bcdd-4f3a-a196-2f60ae397f17)](https://dartnode.com/)
