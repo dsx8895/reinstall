@@ -73,7 +73,7 @@ curl -O https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.sh
 国内服务器：
 
 ```bash
-curl -O https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/-/raw/main/reinstall.sh
+curl -O https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.sh
 ```
 
 ## 下载（当前系统是 <img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows）
@@ -115,7 +115,7 @@ certutil -urlcache -f -split https://raw.githubusercontent.com/dsx8895/reinstall
 国内服务器：
 
 ```batch
-certutil -urlcache -f -split https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/-/raw/main/reinstall.bat
+certutil -urlcache -f -split https://mirror.ghproxy.com/https://raw.githubusercontent.com/dsx8895/reinstall/main/reinstall.bat
 ```
 
 ## 使用
